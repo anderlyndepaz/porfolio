@@ -1,0 +1,42 @@
+@use 'variables' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: $color-white;
+  color: $color-dark;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: $color-primary;
+
+  &:hover {
+    color: $color-secondary;
+  }
+}
+
+h1, h2, h3 {
+  color: $color-dark;
+}
+
+button {
+  cursor: pointer;
+  background-color: $color-primary;
+  color: $color-white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $color-secondary;
+  }
+}
